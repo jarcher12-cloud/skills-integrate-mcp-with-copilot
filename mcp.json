@@ -1,0 +1,24 @@
+{
+  "mcp_version": "1.0",
+  "name": "skills-integrate-mcp-with-copilot",
+  "description": "Starter MCP configuration for local development. Update values to match your MCP deployment.",
+  "server": {
+    "url": "http://localhost:8080",
+    "api_key_env": "MCP_API_KEY"
+  },
+  "model": {
+    "provider": "local",
+    "model": "gpt-5-mini",
+    "max_tokens": 8192
+  },
+  "client": {
+    "timeout_seconds": 30
+  },
+  "notes": "Edit 'server.url' and 'model' fields to match your MCP server and model. Remove this file from source control if it contains secrets.",
+  "servers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    }
+  }
+}
